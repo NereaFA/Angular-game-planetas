@@ -1,0 +1,7 @@
+<div class="c-memory">
+<div *ngFor="let card of cards">
+    <img *ngIf="card.selected" src="{{card.img}}" alt="">
+    <img *ngIf="card.checked" src="assets/tick.svg" alt="">
+    <img *ngIf="!card.selected && !card.checked" (click)="checkCard(card)" src="assets/universe.svg" alt="">
+</div>
+</div>
